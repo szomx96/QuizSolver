@@ -1,0 +1,10 @@
+D:\argh\QuizSolver\QuizSolver\bin\Debug\QuizSolver.exe.config
+D:\argh\QuizSolver\QuizSolver\bin\Debug\QuizSolver.exe
+D:\argh\QuizSolver\QuizSolver\bin\Debug\QuizSolver.pdb
+D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.csprojResolveAssemblyReference.cache
+D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.Properties.Resources.resources
+D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.View.resources
+D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.csproj.GenerateResource.Cache
+D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.csproj.CoreCompileInputs.cache
+D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.exe
+D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.pdb
