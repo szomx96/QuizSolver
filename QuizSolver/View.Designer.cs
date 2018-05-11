@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBoxQuestions = new System.Windows.Forms.ListBox();
             this.buttonPrev = new System.Windows.Forms.Button();
@@ -36,6 +37,8 @@
             this.textBoxScore = new System.Windows.Forms.TextBox();
             this.buttonImport = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.labelTimer = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.answer4 = new QuizSolver.Answer();
             this.answer3 = new QuizSolver.Answer();
             this.answer2 = new QuizSolver.Answer();
@@ -57,9 +60,9 @@
             // 
             this.listBoxQuestions.FormattingEnabled = true;
             this.listBoxQuestions.ItemHeight = 16;
-            this.listBoxQuestions.Location = new System.Drawing.Point(776, 103);
+            this.listBoxQuestions.Location = new System.Drawing.Point(776, 148);
             this.listBoxQuestions.Name = "listBoxQuestions";
-            this.listBoxQuestions.Size = new System.Drawing.Size(202, 260);
+            this.listBoxQuestions.Size = new System.Drawing.Size(202, 244);
             this.listBoxQuestions.TabIndex = 6;
             this.listBoxQuestions.SelectedIndexChanged += new System.EventHandler(this.listBoxQuestions_SelectedIndexChanged);
             // 
@@ -99,7 +102,8 @@
             // textBoxScore
             // 
             this.textBoxScore.Enabled = false;
-            this.textBoxScore.Location = new System.Drawing.Point(776, 33);
+            this.textBoxScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxScore.Location = new System.Drawing.Point(776, 86);
             this.textBoxScore.Multiline = true;
             this.textBoxScore.Name = "textBoxScore";
             this.textBoxScore.ReadOnly = true;
@@ -108,7 +112,7 @@
             // 
             // buttonImport
             // 
-            this.buttonImport.Location = new System.Drawing.Point(776, 384);
+            this.buttonImport.Location = new System.Drawing.Point(776, 408);
             this.buttonImport.Name = "buttonImport";
             this.buttonImport.Size = new System.Drawing.Size(202, 54);
             this.buttonImport.TabIndex = 11;
@@ -119,6 +123,21 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // labelTimer
+            // 
+            this.labelTimer.AutoSize = true;
+            this.labelTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelTimer.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelTimer.Location = new System.Drawing.Point(776, 33);
+            this.labelTimer.Name = "labelTimer";
+            this.labelTimer.Size = new System.Drawing.Size(0, 25);
+            this.labelTimer.TabIndex = 16;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // answer4
             // 
@@ -161,6 +180,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 549);
+            this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.answer4);
             this.Controls.Add(this.answer3);
             this.Controls.Add(this.answer2);
@@ -192,6 +212,8 @@
         private Answer answer2;
         private Answer answer3;
         private Answer answer4;
+        private System.Windows.Forms.Label labelTimer;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

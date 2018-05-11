@@ -14,7 +14,8 @@ namespace QuizSolver
     {
 
         private ArrayOfQuestion questionArray;
-        int currentQuestionID;        
+        int currentQuestionID;
+        int timerTick = 0;
         
 
         public View()
@@ -34,6 +35,7 @@ namespace QuizSolver
             answer2.IsEnabled = true;
             answer3.IsEnabled = true;
             answer4.IsEnabled = true;
+            timer1.Enabled = true;
         }
 
         private void checkScore()
@@ -54,8 +56,12 @@ namespace QuizSolver
                         }
                     }
                 }
+                              
             }
             textBoxScore.Text = "Your score: " + userScore + "/" + maxScore();
+            timer1.Enabled = false;
+            MessageBox.Show("Your time: " + labelTimer.Text + " seconds", "Test finished",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 
@@ -88,6 +94,8 @@ namespace QuizSolver
             answer2.IsChecked = false;
             answer3.IsChecked = false;
             answer4.IsChecked = false;
+            timerTick = 0;
+            timer1.Enabled = false;
         }
 
         private void SaveAnswer()
@@ -189,14 +197,17 @@ namespace QuizSolver
         }
 
         private void listBoxQuestions_SelectedIndexChanged(object sender, EventArgs e)
-        {            
-            loadQuestion(listBoxQuestions.SelectedIndex);            
+        {
+           
+            loadQuestion(listBoxQuestions.SelectedIndex);
+            
         }
 
         private void buttonPrev_Click(object sender, EventArgs e)
         {
             if (currentQuestionID > 0)
             {
+                SaveAnswer();
                 loadQuestion(currentQuestionID - 1);
             }
         }
@@ -210,13 +221,7 @@ namespace QuizSolver
                 SaveAnswer();
                 loadQuestion(currentQuestionID + 1);
             }
-        }
-
-        private void buttonConfirm_Click(object sender, EventArgs e)
-        {
-            SaveAnswer();
-            MessageBox.Show("Answer confirmed");
-        }
+        }       
 
         private void buttonCheck_Click(object sender, EventArgs e)
         {
@@ -224,7 +229,16 @@ namespace QuizSolver
             checkScore();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timerTick++;
+            labelTimer.Text = timerTick.ToString();
+
+        }
+
         #endregion
+
+
     }
 
 }

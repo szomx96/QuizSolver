@@ -1,0 +1,10 @@
+D:\repos\QuizSolver\QuizSolver\bin\Release\QuizSolver.exe.config
+D:\repos\QuizSolver\QuizSolver\bin\Release\QuizSolver.exe
+D:\repos\QuizSolver\QuizSolver\bin\Release\QuizSolver.pdb
+D:\repos\QuizSolver\QuizSolver\obj\Release\QuizSolver.Answer.resources
+D:\repos\QuizSolver\QuizSolver\obj\Release\QuizSolver.Properties.Resources.resources
+D:\repos\QuizSolver\QuizSolver\obj\Release\QuizSolver.View.resources
+D:\repos\QuizSolver\QuizSolver\obj\Release\QuizSolver.csproj.GenerateResource.Cache
+D:\repos\QuizSolver\QuizSolver\obj\Release\QuizSolver.csproj.CoreCompileInputs.cache
+D:\repos\QuizSolver\QuizSolver\obj\Release\QuizSolver.exe
+D:\repos\QuizSolver\QuizSolver\obj\Release\QuizSolver.pdb

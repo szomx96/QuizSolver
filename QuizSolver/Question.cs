@@ -20,24 +20,6 @@ namespace QuizSolver
 
         public bool[] userAnswers;
 
-       
-
-       
-       
-
-        //public Question(string questionText, string[] answers, bool[] properAnswers)
-        //{
-        //    this.questionText = questionText;
-        //    this.answers = answers;
-        //    this.properAnswers = properAnswers;   
-            
-        //    for(int i = 0; i< properAnswers.Length; i++)
-        //    {
-        //        userAnswers[i] = false;
-        //    }
-           
-        //}
-
         public Question()
         {
             this.questionText = "";
