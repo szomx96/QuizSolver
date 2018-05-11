@@ -28,5 +28,11 @@ namespace QuizSolver
             get { return checkBoxAnswer.Checked; }
             set { checkBoxAnswer.Checked = value; }
         }
+
+        public bool IsEnabled
+        {
+            get { return checkBoxAnswer.Enabled; }
+            set { checkBoxAnswer.Enabled = value; }
+        }
     }
 }

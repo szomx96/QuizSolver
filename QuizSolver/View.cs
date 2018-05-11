@@ -14,14 +14,24 @@ namespace QuizSolver
     {
 
         private ArrayOfQuestion questionArray;
-        int currentQuestionID;      
-        
+        int currentQuestionID;        
         
 
         public View()
         {
             InitializeComponent();
 
+        }
+
+        private void Enable()
+        {
+            buttonCheck.Enabled = true;
+            buttonNext.Enabled = true;
+            buttonPrev.Enabled = true;
+            answer1.IsEnabled = true;
+            answer2.IsEnabled = true;
+            answer3.IsEnabled = true;
+            answer4.IsEnabled = true;
         }
 
         private void checkScore()
@@ -43,9 +53,7 @@ namespace QuizSolver
                     }
                 }
             }
-
             textBoxScore.Text = "Your score: " + userScore + "/" + maxScore();
-
         }
 
 
@@ -66,9 +74,7 @@ namespace QuizSolver
                 answer2.IsChecked = false;
                 answer3.IsChecked = false;
                 answer4.IsChecked = false;
-
             }
-
         }
 
         private void clearThemAll()
@@ -80,7 +86,6 @@ namespace QuizSolver
             answer2.IsChecked = false;
             answer3.IsChecked = false;
             answer4.IsChecked = false;
-
         }
 
         private void SaveAnswer()
@@ -106,15 +111,12 @@ namespace QuizSolver
             if (answer2.IsChecked) arrayQ[currentQuestionID].userAnswers[1] = true;
             if (answer3.IsChecked) arrayQ[currentQuestionID].userAnswers[2] = true;
             if (answer4.IsChecked) arrayQ[currentQuestionID].userAnswers[3] = true;
-
         }
 
         private void loadQuestion(int index)
         {
             Question[] arrayQ = questionArray.ToArray();
-            currentQuestionID = index;
-
-            
+            currentQuestionID = index;            
 
             textBox1.Text = arrayQ[index].questionText;
             answer1.AnswerText = arrayQ[index].answers[0];
@@ -123,8 +125,6 @@ namespace QuizSolver
             answer4.AnswerText = arrayQ[index].answers[3];
 
             clearSelectedAnswers();
-
-
         }
 
         private void fillListBox()
@@ -171,7 +171,8 @@ namespace QuizSolver
                 return;
             }
 
-            questionArray = LoadXML.LoadData(path);                       
+            questionArray = LoadXML.LoadData(path);
+            Enable();
             
             if(questionArray!= null)
             {
@@ -183,10 +184,8 @@ namespace QuizSolver
         }
 
         private void listBoxQuestions_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-            loadQuestion(listBoxQuestions.SelectedIndex);
-            
+        {            
+            loadQuestion(listBoxQuestions.SelectedIndex);            
         }
 
         private void buttonPrev_Click(object sender, EventArgs e)
@@ -218,7 +217,6 @@ namespace QuizSolver
         {
             SaveAnswer();
             checkScore();
-
         }
     }
 }

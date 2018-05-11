@@ -35,6 +35,7 @@
             // checkBoxAnswer
             // 
             this.checkBoxAnswer.AutoSize = true;
+            this.checkBoxAnswer.Enabled = false;
             this.checkBoxAnswer.Location = new System.Drawing.Point(0, 15);
             this.checkBoxAnswer.Name = "checkBoxAnswer";
             this.checkBoxAnswer.Size = new System.Drawing.Size(18, 17);

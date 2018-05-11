@@ -44,6 +44,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.textBox1.Location = new System.Drawing.Point(29, 33);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -63,6 +65,7 @@
             // 
             // buttonPrev
             // 
+            this.buttonPrev.Enabled = false;
             this.buttonPrev.Location = new System.Drawing.Point(29, 470);
             this.buttonPrev.Name = "buttonPrev";
             this.buttonPrev.Size = new System.Drawing.Size(119, 50);
@@ -73,6 +76,7 @@
             // 
             // buttonNext
             // 
+            this.buttonNext.Enabled = false;
             this.buttonNext.Location = new System.Drawing.Point(611, 470);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(119, 50);
@@ -83,6 +87,7 @@
             // 
             // buttonCheck
             // 
+            this.buttonCheck.Enabled = false;
             this.buttonCheck.Location = new System.Drawing.Point(776, 470);
             this.buttonCheck.Name = "buttonCheck";
             this.buttonCheck.Size = new System.Drawing.Size(202, 50);
@@ -93,9 +98,11 @@
             // 
             // textBoxScore
             // 
+            this.textBoxScore.Enabled = false;
             this.textBoxScore.Location = new System.Drawing.Point(776, 33);
             this.textBoxScore.Multiline = true;
             this.textBoxScore.Name = "textBoxScore";
+            this.textBoxScore.ReadOnly = true;
             this.textBoxScore.Size = new System.Drawing.Size(202, 54);
             this.textBoxScore.TabIndex = 10;
             // 
@@ -116,6 +123,7 @@
             // answer4
             // 
             this.answer4.IsChecked = false;
+            this.answer4.IsEnabled = false;
             this.answer4.Location = new System.Drawing.Point(390, 295);
             this.answer4.Name = "answer4";
             this.answer4.Size = new System.Drawing.Size(355, 117);
@@ -124,6 +132,7 @@
             // answer3
             // 
             this.answer3.IsChecked = false;
+            this.answer3.IsEnabled = false;
             this.answer3.Location = new System.Drawing.Point(390, 161);
             this.answer3.Name = "answer3";
             this.answer3.Size = new System.Drawing.Size(355, 117);
@@ -132,6 +141,7 @@
             // answer2
             // 
             this.answer2.IsChecked = false;
+            this.answer2.IsEnabled = false;
             this.answer2.Location = new System.Drawing.Point(29, 295);
             this.answer2.Name = "answer2";
             this.answer2.Size = new System.Drawing.Size(355, 117);
@@ -140,6 +150,7 @@
             // answer1
             // 
             this.answer1.IsChecked = false;
+            this.answer1.IsEnabled = false;
             this.answer1.Location = new System.Drawing.Point(29, 161);
             this.answer1.Name = "answer1";
             this.answer1.Size = new System.Drawing.Size(355, 117);
