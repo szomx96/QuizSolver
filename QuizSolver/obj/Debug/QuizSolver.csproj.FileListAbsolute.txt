@@ -8,3 +8,14 @@ D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.csproj.GenerateResource.Cache
 D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.csproj.CoreCompileInputs.cache
 D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.exe
 D:\argh\QuizSolver\QuizSolver\obj\Debug\QuizSolver.pdb
+D:\repos\QuizSolver\QuizSolver\bin\Debug\QuizSolver.exe.config
+D:\repos\QuizSolver\QuizSolver\bin\Debug\QuizSolver.exe
+D:\repos\QuizSolver\QuizSolver\bin\Debug\QuizSolver.pdb
+D:\repos\QuizSolver\QuizSolver\obj\Debug\QuizSolver.csprojResolveAssemblyReference.cache
+D:\repos\QuizSolver\QuizSolver\obj\Debug\QuizSolver.Properties.Resources.resources
+D:\repos\QuizSolver\QuizSolver\obj\Debug\QuizSolver.View.resources
+D:\repos\QuizSolver\QuizSolver\obj\Debug\QuizSolver.csproj.GenerateResource.Cache
+D:\repos\QuizSolver\QuizSolver\obj\Debug\QuizSolver.csproj.CoreCompileInputs.cache
+D:\repos\QuizSolver\QuizSolver\obj\Debug\QuizSolver.exe
+D:\repos\QuizSolver\QuizSolver\obj\Debug\QuizSolver.pdb
+D:\repos\QuizSolver\QuizSolver\obj\Debug\QuizSolver.Answer.resources
