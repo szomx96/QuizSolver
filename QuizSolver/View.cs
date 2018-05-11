@@ -23,6 +23,8 @@ namespace QuizSolver
 
         }
 
+        #region MyFunctions
+
         private void Enable()
         {
             buttonCheck.Enabled = true;
@@ -116,7 +118,8 @@ namespace QuizSolver
         private void loadQuestion(int index)
         {
             Question[] arrayQ = questionArray.ToArray();
-            currentQuestionID = index;            
+            currentQuestionID = index;
+            listBoxQuestions.SelectedIndex = currentQuestionID;
 
             textBox1.Text = arrayQ[index].questionText;
             answer1.AnswerText = arrayQ[index].answers[0];
@@ -152,7 +155,9 @@ namespace QuizSolver
             }           
             return maxScore;
         }
+        #endregion
 
+        #region Actions
 
         private void buttonImport_Click(object sender, EventArgs e)
         {
@@ -198,7 +203,7 @@ namespace QuizSolver
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
-            Question[] qArray = questionArray.ToArray();
+            Question[] qArray = questionArray.ToArray();            
 
             if (currentQuestionID < qArray.Length-1)
             {
@@ -218,5 +223,8 @@ namespace QuizSolver
             SaveAnswer();
             checkScore();
         }
+
+        #endregion
     }
+
 }
